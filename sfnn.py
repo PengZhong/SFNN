@@ -102,12 +102,18 @@ for vector in test_vector:
         # print "gussian_centers[k]:", gussian_centers[k]
         # print "sigma:", sigma
         tmp_value = gaussian.gussian_function(vector, gussian_centers[k], sigma)
-        print "tmp_value:", tmp_value
+        # print "tmp_value:", tmp_value
+        # print training_label[k]
         if tmp_value > max_value:
             max_value = tmp_value
             tmp_index = k
         # print "****************"
-    predict_label.append(training_label[k])
-    # break
+    predict_label.append(training_label[tmp_index])
 print test_label
 print predict_label
+
+import csv
+output = zip(test_label, predict_label)
+with open(r'output.csv', 'wb') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerows(output)
