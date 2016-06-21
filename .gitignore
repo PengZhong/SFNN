@@ -1,2 +1,5 @@
 # Python
 *.py[cod]
+
+# other files
+*.csv
