@@ -10,7 +10,7 @@ import math
 
 def gussian_function(x, gussian_center, sigma):
     feature_tuple = zip(x, gussian_center)
-    fenzi = sum([(elem[0] - elem[1]) ** 2 for elem in feature_tuple])
+    fenzi = sum([(float(elem[0]) - float(elem[1])) ** 2 for elem in feature_tuple])
     fenmu = 2 * sigma * sigma
     return math.e ** (-fenzi / fenmu)
 
