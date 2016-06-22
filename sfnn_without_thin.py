@@ -16,9 +16,9 @@ import sys
 
 print sys.argv
 if len(sys.argv) == 0:
-    training_data_path = "training.txt"
-    testing_data_path = "test.txt"
-    output_path = "output.csv"
+    training_data_path = r".\data\training.txt"
+    testing_data_path = r".\data\test.txt"
+    output_path = r".\result\output.csv"
 elif len(sys.argv) == 4:
     training_data_path = sys.argv[1]
     testing_data_path = sys.argv[2]
