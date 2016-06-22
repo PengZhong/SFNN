@@ -4,3 +4,7 @@
 # data files
 *.csv
 *.dat
+
+# directory
+data
+result
