@@ -9,8 +9,8 @@ import os
 
 # generate training file and test file
 source_data_path = r'.\data\wine.txt'
-training_file_path = r'.\data\wine1.dat'
-testing_file_path = r'.\data\wine1.dat'
+training_file_path = r'.\data\wine_train1.dat'
+testing_file_path = r'.\data\wine_test1.dat'
 training_test_data.generate_training_testing_data(source_data_path, training_file_path, testing_file_path)
 output_path = r'.\result\wine_output1.csv'
 
